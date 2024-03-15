@@ -8,8 +8,12 @@ void CountingSort(vector<int>& vect) {
 	int mn = vect[0];
 	int mx = vect[0];
 	for (int i = 1; i < vect.size(); i++) {
-		if (mx < vect[i]) mx = vect[i];
-		else if (mn > vect[i]) mn = vect[i];
+		if (mx < vect[i]) {
+			mx = vect[i];
+		}
+		else if (mn > vect[i]) {
+			mn = vect[i];
+		}
 	}
 
 	int countingArrLenght = mx - mn + 1;
